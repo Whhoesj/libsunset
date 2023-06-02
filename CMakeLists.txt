@@ -10,7 +10,5 @@ set (HEADERS src/Dusk2Dawn.h)
 
 add_library (${PROJECT_NAME} SHARED ${SOURCES})
 target_link_libraries(sunset ${LUA_LIBRARIES})
-#set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "-m32" LINK_FLAGS "-m32")
 
 install (TARGETS ${PROJECT_NAME} DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include)

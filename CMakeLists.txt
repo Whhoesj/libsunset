@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.0.0)
 project (sunset)
 
 find_package(Lua REQUIRED)
-include_directories(/usr/local/include ${LUA_INCLUDE_DIR})
+include_directories(${LUA_INCLUDE_DIR})
 
 set (CMAKE_CXX_STANDARD 11)
 set (SOURCES src/Dusk2Dawn.cpp src/luasun.cpp)
